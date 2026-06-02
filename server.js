@@ -1,5 +1,12 @@
-console.log("Hello!")
+const express = require("express")
 
-// git remote add origin https://github.com/Vaidehik7/DevOps-Lab.git
-// git branch -M main
-// git push -u origin main
+const app = express()
+
+app.get("/", function(req, res){
+    res.send("Hello! I am in server.js")
+})
+
+app.listen(3000)
+
+// console.log("Hello!")
+
